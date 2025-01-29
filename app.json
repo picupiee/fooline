@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "fooline-seller",
+    "name": "fooline",
     "main": "app/_layout.tsx",
-    "slug": "fooline-seller",
+    "slug": "fooline",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,7 +17,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.picupiee.fooline-seller"
+      "package": "com.picupiee.fooline"
     },
     "web": {
       "bundler": "metro",
