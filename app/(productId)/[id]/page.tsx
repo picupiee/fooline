@@ -34,6 +34,15 @@ export default function ProductDetailScreen() {
         className="absolute top-4 left-4 z-50 bg-gray-600/50 rounded-full p-2"
         onPress={() => router.replace("/(tabs)")}
       />
+      <MaterialCommunityIcons
+        name="heart"
+        size={26}
+        color="black"
+        className="absolute top-4 right-4 z-50 bg-gray-600/50 rounded-full p-2"
+        onPress={() =>
+          console.log("Heart on", product.name, "has been pressed!")
+        }
+      />
       <Image
         source={{ uri: product.imageUrl }}
         style={{ width: "100%", height: 300 }}
