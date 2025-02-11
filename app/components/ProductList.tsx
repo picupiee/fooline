@@ -1,8 +1,8 @@
-import React from "react";
-import { View, FlatList, Text } from "react-native";
+import React, { useCallback, useState } from "react";
+import { View, FlatList, Text, RefreshControl } from "react-native";
 import { Product, products } from "../data/sample-product";
 import ProductCard from "./ProductCard";
-import { Link } from "expo-router";
+import { Link, useRouter } from "expo-router";
 
 export default function ProductList() {
   const renderItem = ({ item: product }: { item: Product }) => (
@@ -32,6 +32,7 @@ export default function ProductList() {
         columnWrapperClassName="justify-between sm:justify-start"
         showsVerticalScrollIndicator={false}
         scrollEnabled={false}
+        contentContainerStyle={{ paddingBottom: 150 }}
       />
     </View>
   );
